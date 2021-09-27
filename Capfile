@@ -35,6 +35,7 @@ require "capistrano/rails/migrations"
 # require "capistrano/passenger"
 require 'capistrano/safe_deploy_to'
 require 'capistrano/puma'
+require 'capistrano/yarn'
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
 
