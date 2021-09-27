@@ -39,5 +39,6 @@ set :deploy_to, "/var/www/cp-tutorial3"
 
 # set :ssh_options, verify_host_key: :secure
 set :rbenv_ruby, File.read('.ruby-version').strip
-append :linked_files, "config/master.key"
+append :linked_files, "config/credentials/production.key"
 append :linked_dirs,'.bundle', "log", "tmp/pids", "tmp/cache", "tmp/sockets"
+ 
