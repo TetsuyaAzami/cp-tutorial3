@@ -51,6 +51,7 @@ test:
 production:
   <<: *default
   database: cp3
-  username: <%= ENV.fetch("RAILS_DB_PRODUCTION_USER") { 5 } %>
-  password: <%= ENV.fetch("RAILS_DB_PRODUCTION_PASSWORD") { 5 } %>
-  host: cp-tutorial3.cd1facehh1rg.ap-northeast-1.rds.amazonaws.com
+  username: <%= ENV.fetch("RAILS_DB_PRODUCTION_USER") %>
+  password: <%= ENV.fetch("RAILS_DB_PRODUCTION_PASSWORD") %>
+  host: cp3.cd1facehh1rg.ap-northeast-1.rds.amazonaws.com
+
