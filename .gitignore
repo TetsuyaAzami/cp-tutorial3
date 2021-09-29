@@ -34,8 +34,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-/config/deploy/*
-/config/deploy.rb
 
 /config/credentials/production.key
 
