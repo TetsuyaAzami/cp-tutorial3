@@ -8,7 +8,7 @@ set :branch, ENV['BRANCH'] || "main"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, ENV['RIMOTE_SERVER_APPLICATION_ROOT_PATH']
+set :deploy_to, ENV['DEPLOY_TO']
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server ENV['RIMOTE_SERVER_IP'], user: ENV['RIMOTE_SERVER_USERNAME'], roles: %w{app db web}, my_property: :my_value
+server  ENV['DEPLOY_SERVER_IP'], user: ENV['DEPLOY_SERVER_USERNAME'], roles: %w{app db web}, my_property: :my_value
 set :rails_env, :production
 
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
