@@ -40,3 +40,5 @@ yarn-debug.log*
 /config/credentials/development.key
 
 /config/credentials/test.key
+config/deploy/production.rb
+config/deploy.rb
