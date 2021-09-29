@@ -23,7 +23,7 @@ jobs:
     docker:
       - image: cimg/ruby:2.6.7-node
       - image: circleci/mysql:8-ram
-        name: <%= Rails.application.credentials.database[:host] %>
+        name: <%= Rails.application.credentials.dig(:database,:host) %>
         command: mysqld --default-authentication-plugin=mysql_native_password
         environment:
           MYSQL_ROOT_PASSWORD: <%= Rails.application.credentials.database[:password]%>
