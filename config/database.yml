@@ -51,4 +51,4 @@ test:
 production:
   <<: *default
   database: cp3
-  host: <%= Rails.application.credentials.database[:host]%>
+  host: <%= Rails.application.credentials.dig(:database,:host)%>
